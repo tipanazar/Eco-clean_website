@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-//   background-color: var(--header_footer_color);
+  //   background-color: var(--header_footer_color);
 }
 
 *,
@@ -12,7 +12,7 @@ html {
 
 body {
   text-rendering: optimizeSpeed;
-  font-family: "Montserrat", sans-serif;
+  font-family: "ABeeZee", sans-serif;
   min-height: 100vh;
   margin: 0;
 }
@@ -47,6 +47,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 ol,

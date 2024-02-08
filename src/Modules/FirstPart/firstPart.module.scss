@@ -1,11 +1,58 @@
 .wrapper {
-    .summary {
+  padding-top: 60px;
+  padding: 65px 20px;
+  min-height: 480px;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-image: url("../../images/firstBackground.jpg");
 
-    }
-    .title {
+  .summary {
+    font-size: 9px;
+    margin-bottom: 60px;
 
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      margin: 30px auto;
+      width: 60px;
+      height: 1px;
+      left: 50%;
+      transform: translate(-50%);
+      background-color: white;
     }
-    .link {
-        
+  }
+
+  .title {
+    font-size: 16px;
+    margin-bottom: 55px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 1px;
+  }
+
+  .link {
+    display: block;
+    padding: 10px 20px;
+    background-color: #facf03;
+    box-shadow: 0px 4px 3px #937004;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+
+  .list {
+    text-align: left;
+    .listItem {
+      color: #fff;
+      font-size: 7px;
+      font-weight: 400;
+      line-height: 130%;
+      letter-spacing: 1px;
     }
+  }
 }
