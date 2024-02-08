@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ebf7fd;
+  //   .headerLogoLink {
+  .headerLogo {
+    height: 70px;
+  }
+  //   }
+  .address {
+    .addressLink {
+      color: black;
+      display: flex;
+      align-items: center;
+      &:first-of-type {
+        margin-bottom: 10px;
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
