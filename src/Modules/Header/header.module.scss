@@ -11,7 +11,7 @@
   //   }
   .address {
     .addressLink {
-      color: black;
+      color: var(--mainFontColor);
       display: flex;
       align-items: center;
       &:first-of-type {

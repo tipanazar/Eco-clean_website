@@ -1,7 +1,7 @@
 import { Icon } from "../../shared/Components/Icon";
 import { Img } from "../../shared/Components/Img";
 
-import headerLogo from "../../images/logo.png";
+import { headerLogo } from "../../images";
 
 import s from "./header.module.scss";
 

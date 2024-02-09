@@ -1,0 +1,39 @@
+@import "../../sass/main.scss";
+
+.address {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  //   background-color: black;
+
+  .link {
+    margin-bottom: 15px;
+  }
+
+  .linksWrapper {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+
+    .link:first-of-type {
+      margin: 0 15px;
+    }
+    .link:last-of-type {
+      margin: 0;
+    }
+  }
+
+  .icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.bigIcon {
+  //   width: 100vw;
+  //   height: max-content;
+  //   height: 200px;
+  @include mq(desktop) {
+    display: none !important;
+  }
+}
