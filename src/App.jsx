@@ -1,9 +1,10 @@
-import { FifthPart } from "./Modules/FifthPart/FifthPart";
-import { FirstPart } from "./Modules/FirstPart/FirstPart";
-import { FourthPart } from "./Modules/FourthPart/FourthPart";
 import { Header } from "./Modules/Header/Header";
+import { FirstPart } from "./Modules/FirstPart/FirstPart";
 import { SecondPart } from "./Modules/SecondPart/SecondPart";
 import { ThirdPart } from "./Modules/ThirdPart/ThirdPart";
+import { FourthPart } from "./Modules/FourthPart/FourthPart";
+import { FifthPart } from "./Modules/FifthPart/FifthPart";
+import { Footer } from "./Modules/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <ThirdPart />
         <FourthPart />
         <FifthPart />
+        <Footer />
       </main>
     </>
   );

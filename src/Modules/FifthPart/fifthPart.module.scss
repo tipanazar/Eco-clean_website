@@ -15,11 +15,16 @@
     align-items: center;
     font-style: normal;
 
-    .link:first-of-type {
-      margin: 0 15px;
-    }
-    .link:last-of-type {
+    .link {
       margin: 0;
+      // background-color: red;
+      padding: 4px;
+      &:first-of-type {
+        margin: 0 5px;
+      }
+      &:last-of-type {
+        margin-left: 5px;
+      }
     }
   }
 
@@ -30,9 +35,9 @@
 }
 
 .bigIcon {
-  //   width: 100vw;
-  //   height: max-content;
-  //   height: 200px;
+  height: 250px;
+  max-width: 350px;
+
   @include mq(desktop) {
     display: none !important;
   }
