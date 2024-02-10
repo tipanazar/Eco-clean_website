@@ -5,6 +5,7 @@
   flex-direction: column;
   font-size: 18px;
   //   background-color: black;
+  margin-bottom: 20px;
 
   .link {
     margin-bottom: 15px;
@@ -35,8 +36,7 @@
 }
 
 .bigIcon {
-  height: 250px;
-  max-width: 350px;
+  height: 230px;
 
   @include mq(desktop) {
     display: none !important;

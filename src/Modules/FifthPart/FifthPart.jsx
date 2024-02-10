@@ -34,8 +34,8 @@ export const FifthPart = () => {
             </a>
           </p>
         </address>
-      </SiteSection>
       <Icon className={s.bigIcon} iconId="footerBigIcon" />
+      </SiteSection>
     </>
   );
 };
