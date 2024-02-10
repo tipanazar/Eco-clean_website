@@ -86,7 +86,7 @@ export const SecondPart = () => {
             <br />
             ** Funkcja spania 30 zł.
             <br />
-            *** Minimalne zamówienie 150 zł
+            *** Minimalne zamówienie 150 zł.
           </p>
         </ServicesCard>
         <ServicesCard

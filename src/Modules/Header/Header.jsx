@@ -12,7 +12,7 @@ export const Header = () => {
         <Img className={s.headerLogo} src={headerLogo} alt="logo" />
       </a>
       <address className={s.address}>
-        <a className={s.addressLink} href="callto:+48538944673">
+        <a className={s.addressLink} href="tel:+48538944673">
           <Icon className={s.icon} iconId="phone" />
           +48538944673
         </a>

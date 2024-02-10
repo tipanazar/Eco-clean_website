@@ -1,4 +1,3 @@
-// import Swiper from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -21,23 +20,17 @@ import s from "./fourthPart.module.scss";
 
 export const FourthPart = () => {
   return (
-    <SiteSection
-    title="Zespół Expert Cleaning"
-    id="gallery"
-    >
+    <SiteSection title="Zespół Expert Cleaning" id="gallery">
       <Swiper
         className={s.swiper}
         spaceBetween={20}
         centeredSlides={false}
         autoplay={{
-          delay: 500,
+          delay: 2500,
           disableOnInteraction: true,
         }}
         breakpoints={{
-          //   0: {
-          //     slidesPerView: 1,
-          //   },
-          890: {
+          700: {
             slidesPerView: 2,
           },
           1100: {

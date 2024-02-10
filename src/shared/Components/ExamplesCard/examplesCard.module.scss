@@ -1,3 +1,5 @@
+@import "../../../sass/main.scss";
+
 .listItem {
   position: relative;
   width: fit-content;
@@ -8,6 +10,9 @@
     width: 100%;
     border-radius: 20px;
     border: 1px solid #d9d9d9;
+    @include mq(tablet) {
+      max-width: 190px;
+    }
   }
 
   .when {
@@ -17,8 +22,12 @@
     padding: 5px 10px;
     border-radius: 5px;
     min-width: 90px;
+    font-size: 15px;
     text-align: center;
     background-color: var(--highlightColor);
     color: white;
+    @include mq(tablet) {
+      font-size: 18px;
+    }
   }
 }

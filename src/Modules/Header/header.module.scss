@@ -1,21 +1,38 @@
+@import "../../sass/main.scss";
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
   background-color: #ebf7fd;
-  //   .headerLogoLink {
+  @include mq(tablet) {
+    padding: 10px 40px;
+  }
+  @include mq(desktop) {
+    padding: 10px 60px;
+  }
   .headerLogo {
     height: 70px;
   }
-  //   }
+
   .address {
+    @include mq(tablet) {
+      display: flex;
+    }
     .addressLink {
       color: var(--mainFontColor);
       display: flex;
       align-items: center;
       &:first-of-type {
         margin-bottom: 10px;
+        @include mq(tablet) {
+          margin-bottom: 0;
+          margin-right: 15px;
+        }
+        @include mq(desktop) {
+          margin-right: 20px;
+        }
       }
 
       .icon {

@@ -1,3 +1,5 @@
+@import "../../sass/main.scss";
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -5,11 +7,15 @@
   align-items: center;
   padding: 50px 35px 40px 35px;
   background: linear-gradient(180deg, rgba(235, 247, 253, 0) 0%, #ebf7fd 5.87%);
+  @include mq(tablet) {
+    padding: 40px 35px 40px 35px;
+  }
 
   .img {
     max-height: 70px;
     margin-bottom: 15px;
   }
+
   .navWrapper {
     margin-bottom: 20px;
     .navlink {
@@ -17,6 +23,10 @@
       padding: 10px;
       font-size: 20px;
       letter-spacing: 1px;
+      @include mq(tablet) {
+        font-size: 22px;
+      }
+
       &:first-of-type {
         margin-right: 45px;
       }
@@ -31,6 +41,11 @@
     line-height: 130%;
     letter-spacing: 1px;
     margin-bottom: 3px;
+    @include mq(tablet) {
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
     .contactsLink {
       &:first-of-type {
         margin-bottom: 2px;
@@ -39,5 +54,8 @@
   }
   .copyrightText {
     font-size: 15px;
+    @include mq(tablet) {
+      font-size: 17px;
+    }
   }
 }
