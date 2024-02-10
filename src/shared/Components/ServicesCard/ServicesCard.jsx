@@ -5,8 +5,6 @@ import { Modal } from "../Modal/Modal";
 
 import s from "./servicesCard.module.scss";
 
-const modalRoot = document.querySelector("div#modalRoot");
-
 export const ServicesCard = ({
   title,
   price,
@@ -16,13 +14,6 @@ export const ServicesCard = ({
   children,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  // // <Modal>{children}</Modal>;
-  // if (isModalOpen) {
-  //   // modalRoot.style.zIndex = 2;
-  // }
-  // //  else {
-  // //   modalRoot.style.zIndex = -1;
-  // // }
   return (
     <>
       <li className={s.listItem}>
@@ -42,7 +33,11 @@ export const ServicesCard = ({
           Co obejmuje?
         </button>
       </li>
-      {isModalOpen && <Modal title={title} closeModal={() => setIsModalOpen(false)}>{children}</Modal>}
+      {isModalOpen && (
+        <Modal title={title} closeModal={() => setIsModalOpen(false)}>
+          {children}
+        </Modal>
+      )}
     </>
   );
 };

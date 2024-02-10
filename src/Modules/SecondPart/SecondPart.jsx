@@ -35,52 +35,52 @@ export const SecondPart = () => {
                 <td>Cena</td>
               </tr>
               <tr>
-                <td>Krzesło</td>
-                <td>40-50 zł</td>
+                <td>Krzesło.</td>
+                <td>40-50 zł.</td>
               </tr>
               <tr>
-                <td>Fotel</td>
-                <td>90 zł</td>
+                <td>Fotel.</td>
+                <td>90 zł.</td>
               </tr>
               <tr>
-                <td>Pufa</td>
-                <td>50 zł</td>
+                <td>Pufa.</td>
+                <td>50 zł.</td>
               </tr>
               <tr>
-                <td>Materac jednoosobowy</td>
-                <td>110 zł</td>
+                <td>Materac jednoosobowy.</td>
+                <td>110 zł.</td>
               </tr>
               <tr>
-                <td>Materac jednoosobowy dwustronnie</td>
-                <td>190 zł</td>
+                <td>Materac jednoosobowy dwustronnie.</td>
+                <td>190 zł.</td>
               </tr>
               <tr>
                 <td>Materac dwuosobowy.</td>
-                <td>140 zł</td>
+                <td>140 zł.</td>
               </tr>
               <tr>
                 <td>Materac dwuosobowy dwustronnie.</td>
-                <td>240 zł</td>
+                <td>240 zł.</td>
               </tr>
               <tr>
                 <td>Sofa dwuosobowa* (100-120 cm).</td>
-                <td>130 zł</td>
+                <td>130 zł.</td>
               </tr>
               <tr>
                 <td>Sofa trzyosobowa*.</td>
-                <td>160 zł</td>
+                <td>160 zł.</td>
               </tr>
               <tr>
                 <td>Narożnik*.</td>
-                <td>od 190 zł</td>
+                <td>od 190 zł.</td>
               </tr>
               <tr>
                 <td>Zagłówek do łóżka.</td>
-                <td>85 zł</td>
+                <td>85 zł.</td>
               </tr>
               <tr>
                 <td>Dywan.</td>
-                <td>25-28 zł/m2</td>
+                <td>25-28 zł/m2.</td>
               </tr>
             </tbody>
           </table>
@@ -91,7 +91,6 @@ export const SecondPart = () => {
             <br />
             *** Minimalne zamówienie 150 zł
           </p>
-          <button>Zamów usługę</button>
         </ServicesCard>
         <ServicesCard
           title="Sprzątanie standardowe"
