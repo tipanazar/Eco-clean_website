@@ -11,10 +11,27 @@ html {
 }
 
 body {
+  // position: relative;
   text-rendering: optimizeSpeed;
   font-family: "ABeeZee", sans-serif;
   min-height: 100vh;
   margin: 0;
+}
+
+div#root {
+  background-color: white;
+}
+
+div#modalRoot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 120vh;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: -1;
+  overflow-y: auto;
 }
 
 input::-webkit-outer-spin-button,
@@ -47,7 +64,7 @@ ul {
 
 a {
   text-decoration: none;
-  color:  var(--mainFontColor);
+  color: var(--mainFontColor);
 }
 
 ol,
