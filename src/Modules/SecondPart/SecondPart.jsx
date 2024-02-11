@@ -189,7 +189,11 @@ export const SecondPart = () => {
           <p>17 zl /m².</p>
         </ServicesCard>
         <ServicesCard
-          title="Сzyszczenie okien"
+          title={
+            <span>
+              Сzyszczenie <br /> okien
+            </span>
+          }
           modalTitle="Сzyszczenie okien"
           price={11}
           iconId={services5}

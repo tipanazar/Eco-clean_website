@@ -2,12 +2,15 @@
 
 .wrapper {
   position: relative;
-  padding: 25px var(--sidePaddingMobile);
+  padding: var(--sectionMarginMobile);
   @include mq(tablet) {
-    padding: 30px var(--sidePaddingTablet);
+    padding: var(--sectionMarginTablet);
   }
   @include mq(tablet-big) {
-    padding: 30px var(--sidePaddingTabletBig);
+    padding: var(--sectionMarginTabletBig);
+  }
+  @include mq(desktop) {
+    padding: var(--sectionMarginDesktop);
   }
   & > p {
     margin: 0 0 25px 0;

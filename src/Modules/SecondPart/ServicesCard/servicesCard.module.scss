@@ -10,11 +10,13 @@ $mediaHeight: 90px;
   font-size: 15px;
   line-height: 130%;
   letter-spacing: 1px;
-  width: fit-content;
-  padding: 20px 15px;
+  padding: 15px 10px;
   max-width: 200px;
-  @include mq(phone) {
-    font-size: 15px;
+  @include mq(mobile) {
+    padding: 20px 15px;
+  }
+  @include mq(desktop-big) {
+    max-width: 210px;
   }
 
   .title {
@@ -27,7 +29,6 @@ $mediaHeight: 90px;
 
   .icon {
     height: calc($mediaHeight - 30px);
-    // height: $mediaHeight;
 
     @include mq(mobile) {
       height: $mediaHeight;
@@ -37,7 +38,6 @@ $mediaHeight: 90px;
   .img {
     margin: 0 auto;
     height: calc($mediaHeight - 30px);
-    // height: $mediaHeight;
     @include mq(mobile) {
       height: $mediaHeight;
     }
@@ -47,6 +47,11 @@ $mediaHeight: 90px;
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 17px;
+    @include mq(desktop) {
+      font-size: 18px;
+      margin-top: 18px;
+      margin-bottom: 14px;
+    }
   }
 
   .button {
@@ -54,6 +59,16 @@ $mediaHeight: 90px;
     background: var(--highlightColor);
     color: white;
     border: none;
-    padding: 7px 15px;
+    padding: 5px 10px;
+    font-size: 14px;
+
+    @include mq(mobile) {
+      padding: 7px 15px;
+      font-size: 15px;
+    }
+    @include mq(desktop) {
+      padding: 10px 18px;
+      font-size: 16px;
+    }
   }
 }

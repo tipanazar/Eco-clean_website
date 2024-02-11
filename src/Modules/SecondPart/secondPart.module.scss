@@ -10,9 +10,15 @@
   margin: 0 auto;
   @include mq(mobile) {
     row-gap: 20px;
-    column-gap: 20px; 
+    column-gap: 20px;
+  }
+  @include mq(tablet-big) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
   @include mq(desktop) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  @include mq(desktop-big) {
+    column-gap: 25px;
   }
 }

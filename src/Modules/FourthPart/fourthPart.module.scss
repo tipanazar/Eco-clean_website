@@ -6,15 +6,14 @@ $borderRadius: 7px;
   position: static;
   border-radius: $borderRadius;
   max-width: 330px;
-  // max-width: 310px;
-  // @include mq(mobile) {
-  //   max-width: 330px;
-  // }
   @include mq(tablet) {
     max-width: 500px;
   }
   @include mq(desktop) {
     max-width: 800px;
+  }
+  @include mq(desktop-big) {
+    max-width: 1080px;
   }
 
   & > div + div {

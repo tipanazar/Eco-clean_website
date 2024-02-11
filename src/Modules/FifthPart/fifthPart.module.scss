@@ -1,5 +1,7 @@
 @import "../../sass/main.scss";
 
+$desktopContentSidePadding: 80px;
+
 .wrapper {
   & > p {
     @include mq(tablet) {
@@ -18,6 +20,10 @@
     @include mq(tablet-big) {
       padding: 0 var(--sidePaddingTabletBig);
     }
+    @include mq(desktop) {
+      width: 100%;
+      padding: 0 var(--sidePaddingDesktop);
+    }
 
     .address {
       display: flex;
@@ -27,9 +33,20 @@
       @include mq(tablet) {
         margin: auto 30px 15px 0;
       }
+      @include mq(desktop) {
+        margin: auto auto 15px 0;
+        font-size: 22px;
+      }
+      @include mq(desktop-big) {
+        margin: auto auto 15px $desktopContentSidePadding;
+        font-size: 22px;
+      }
 
       .link {
         margin-bottom: 10px;
+        @include mq(desktop) {
+          margin-bottom: 15px;
+        }
       }
 
       .linksWrapper {
@@ -58,14 +75,10 @@
   .bottomImg {
     width: 100%;
     max-width: 360px;
-    // height: 230px;
 
-    @include mq(tablet) {
-      // height: 200px;
-    }
-    @include mq(tablet-big) {
-      // height: 280px;
-      // width: 500px;
+    @include mq(desktop-big) {
+      max-width: 400px;
+      margin-right: $desktopContentSidePadding;
     }
   }
 }

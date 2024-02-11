@@ -36,6 +36,9 @@ export const FourthPart = () => {
           1100: {
             slidesPerView: 3,
           },
+          1400: {
+            slidesPerView: 4,
+          },
         }}
         pagination={{
           clickable: true,

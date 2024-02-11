@@ -5,26 +5,37 @@
   align-items: center;
   width: fit-content;
   font-size: 22px;
-  margin: 25px var(--sidePaddingMobile) 25px var(--sidePaddingMobile);
+  margin: var(--sectionMarginMobile);
   @include mq(tablet) {
-    margin: 30px var(--sidePaddingTablet) 25px var(--sidePaddingTablet);
+    font-size: 24px;
+    margin: var(--sectionMarginTablet);
   }
   @include mq(tablet-big) {
-    margin: 30px var(--sidePaddingTabletBig) 25px var(--sidePaddingTabletBig);
+    margin: var(--sectionMarginTabletBig);
   }
   @include mq(desktop) {
     font-size: 25px;
+    margin: var(--sectionMarginDesktop);
   }
 
   &::before {
     content: "";
+    border-radius: 10px;
     width: 50px;
     height: 2px;
     margin-right: 15px;
     top: 50%;
     background-color: var(--highlightColor);
+    @include mq(tablet) {
+      width: 65px;
+    }
+    @include mq(tablet-big) {
+      width: 80px;
+      height: 3px;
+      margin-right: 20px;
+    }
     @include mq(desktop) {
-      width: 60px;
+      margin-right: 25px;
     }
   }
 }

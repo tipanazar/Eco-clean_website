@@ -8,7 +8,10 @@
   padding: 50px 35px 40px 35px;
   background: linear-gradient(180deg, rgba(235, 247, 253, 0) 0%, #ebf7fd 5.87%);
   @include mq(tablet) {
-    padding: 40px 35px 40px 35px;
+    padding-top: 55px;
+  }
+  @include mq(desktop) {
+    padding-top: 60px;
   }
 
   .img {

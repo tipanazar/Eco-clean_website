@@ -4,4 +4,13 @@
   --sidePaddingMobile: 20px;
   --sidePaddingTablet: 40px;
   --sidePaddingTabletBig: 60px;
+  --sidePaddingDesktop: 70px;
+  --sectionMarginMobile: 25px var(--sidePaddingMobile) 25px
+    var(--sidePaddingMobile);
+  --sectionMarginTablet: 30px var(--sidePaddingTablet) 25px
+    var(--sidePaddingTablet);
+  --sectionMarginTabletBig: 30px var(--sidePaddingTabletBig) 25px
+    var(--sidePaddingTabletBig);
+  --sectionMarginDesktop: 40px var(--sidePaddingDesktop) 30px
+    var(--sidePaddingDesktop);
 }
