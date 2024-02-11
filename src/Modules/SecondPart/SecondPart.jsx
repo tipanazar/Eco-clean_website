@@ -12,7 +12,7 @@ export const SecondPart = () => {
         <ServicesCard
           title="Czyszczenie tapicerki"
           modalTitle="Czyszczenie tapicerki"
-          price={30}
+          price="od 50 zł"
           iconId="services-1"
         >
           <p>
@@ -92,7 +92,7 @@ export const SecondPart = () => {
         <ServicesCard
           title="Sprzątanie standardowe"
           modalTitle="Sprzątanie generalne standartowe"
-          price={290}
+          price="10-12 zł/m²"
           iconId="services-2"
         >
           <p>Сo obejmuje sprzątanie generalne?</p>
@@ -127,13 +127,13 @@ export const SecondPart = () => {
             <li>Bidetu i WC.</li>
             <li>Zmiana worka na śmieci.</li>
           </ul>
-          <p>10-12 zł/m²</p>
+          <p>10-12 zł/m².</p>
           <p>* Cena zależy od stopnia zabrudzenia.</p>
         </ServicesCard>
         <ServicesCard
           title="Sprzątanie generalne"
           modalTitle="Sprzątanie generalne MAXI"
-          price={420}
+          price="15-17 zł/m²"
           iconId="services-3"
         >
           <p>Сo obejmuje sprzątanie generalne?</p>
@@ -170,13 +170,13 @@ export const SecondPart = () => {
             <li>Zmiana worka na śmieci.</li>
           </ul>
           <p>+ Mycie wszystkich okien.</p>
-          <p>15-17 zł/m²</p>
+          <p>15-17 zł/m².</p>
           <p>* Cena zależy od stopnia zabrudzenia.</p>
         </ServicesCard>
         <ServicesCard
           title="Sprzątanie po budowie"
           modalTitle="Sprzątanie po budowie"
-          price={11}
+          price="17 zł/m²"
           iconId="services-4"
           m2={true}
         >
@@ -207,7 +207,7 @@ export const SecondPart = () => {
             </span>
           }
           modalTitle="Сzyszczenie okien"
-          price={11}
+          price="od 15 zł/m²"
           iconId={services5}
           m2={true}
           isPng={true}
@@ -232,7 +232,7 @@ export const SecondPart = () => {
               </tr>
             </tbody>
           </table>
-          <p>* Minimalny koszt usługi wynosi 200 zł</p>
+          <p>* Minimalny koszt usługi wynosi 200 zł.</p>
         </ServicesCard>
       </ul>
     </SiteSection>

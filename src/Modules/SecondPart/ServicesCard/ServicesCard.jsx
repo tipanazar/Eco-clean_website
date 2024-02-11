@@ -24,9 +24,7 @@ export const ServicesCard = ({
         ) : (
           <Icon className={s.icon} iconId={iconId} />
         )}
-        <p className={s.price}>
-          od {price} zł{m2 && "/m²"}
-        </p>
+        <p className={s.price}>{price}</p>
         <button
           className={s.button}
           onClick={() => setIsModalOpen(!isModalOpen)}
