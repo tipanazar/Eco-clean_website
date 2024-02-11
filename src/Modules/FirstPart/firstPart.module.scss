@@ -72,10 +72,10 @@
     object-fit: cover;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 1);
-    border-radius: 5px;
     filter: brightness(0.5) blur(2px);
-
+    
     @include mq(tablet-big) {
+      border-radius: 5px;
       width: 90vw;
     }
     @include mq(desktop) {
@@ -93,7 +93,6 @@
 
   .contentWrapper {
     position: absolute;
-    // width: 100%;
     width: max-content;
     max-width: 90%;
     top: 50%;
