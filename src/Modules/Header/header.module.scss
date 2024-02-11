@@ -26,15 +26,17 @@
       display: flex;
       align-items: center;
       font-size: 16px;
+      @include mq(tablet) {
+        padding: 10px 5px;
+        margin-right: 20px;
+        font-size: 18px;
+      }
+
       &:first-of-type {
         margin-bottom: 10px;
         @include mq(tablet) {
           margin-bottom: 0;
           margin-right: 15px;
-        }
-        @include mq(desktop) {
-          margin-right: 20px;
-          font-size: 18px;
         }
       }
 

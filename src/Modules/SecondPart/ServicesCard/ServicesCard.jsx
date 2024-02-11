@@ -9,6 +9,7 @@ export const ServicesCard = ({
   title,
   price,
   iconId,
+  modalTitle,
   m2 = null,
   isPng = false,
   children,
@@ -34,7 +35,7 @@ export const ServicesCard = ({
         </button>
       </li>
       {isModalOpen && (
-        <Modal title={title} closeModal={() => setIsModalOpen(false)}>
+        <Modal title={modalTitle} closeModal={() => setIsModalOpen(false)}>
           {children}
         </Modal>
       )}

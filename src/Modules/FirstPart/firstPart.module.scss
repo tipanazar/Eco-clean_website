@@ -7,7 +7,6 @@
   text-align: center;
   color: white;
   background-size: cover;
-  // background-size: contain;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.5);
   background-image: url("../../images/others/firstBackground.jpg");
@@ -22,12 +21,12 @@
     background-position: 0 -220px;
   }
   @include mq(desktop) {
-    // height: 680px;
     height: 60vw;
-    // max-height: 750px;
     background-color: rgba(0, 0, 0, 0.6);
-
     background-position: 0 -330px;
+  }
+  @include mq(desktop-big) {
+    background-position: 0 -400px;
   }
 
   .contentWrapper {
@@ -84,6 +83,10 @@
       margin: 0 auto;
       font-size: 17px;
       margin-bottom: 50px;
+      color: var(--mainFontColor) !important;
+      &:hover {
+        background-color: #ffde37;
+      }
       @include mq(tablet) {
         font-size: 18px;
         padding: 10px 25px;

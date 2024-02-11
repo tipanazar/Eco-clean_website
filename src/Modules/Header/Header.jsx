@@ -18,10 +18,10 @@ export const Header = () => {
         </a>
         <a
           className={s.addressLink}
-          href="https://www.instagram.com/tipanazar/"
+          href="https://www.instagram.com/pranie.kanap_bydgoszcz?igsh=NDYwcGppdjV3aXVy"
         >
           <Icon className={s.icon} iconId="instagram" />
-          kurwa bober
+          Instagram
         </a>
       </address>
     </header>
