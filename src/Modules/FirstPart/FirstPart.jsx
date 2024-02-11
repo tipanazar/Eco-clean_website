@@ -1,8 +1,17 @@
+import { Img } from "../../shared/Components/Img";
+
+import backgroundImage from "../../images/others/firstBackground.jpg";
+
 import s from "./firstPart.module.scss";
 
 export const FirstPart = () => {
   return (
     <section className={s.wrapper}>
+        <Img
+          className={s.backgroundImage}
+          src={backgroundImage}
+          alt="background image"
+        />
       <div className={s.contentWrapper}>
         <p className={s.summary}>
           WYBIERZ USLUGE DOSTOSOWANA DO TWOICH POTRZEB

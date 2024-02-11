@@ -1,39 +1,64 @@
 @import "../../sass/main.scss";
 
 .wrapper {
+  position: relative;
   padding-top: 60px;
   padding: 65px 20px;
   min-height: 480px;
   text-align: center;
   color: white;
-  background-size: cover;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: url("../../images/others/firstBackground.jpg");
-  // filter: blur(5px);
+  // background-color: black;
+  // background-size: cover;
+  // background-blend-mode: multiply;
+  // background-image: url("");
 
   @include mq(tablet) {
     display: flex;
     align-items: center;
-    background-position: 0 -150px;
-    height: 640px;
+    height: 600px;
   }
   @include mq(tablet-big) {
-    height: 680px;
-    background-position: 0 -220px;
+    height: 650px;
   }
   @include mq(desktop) {
-    height: 60vw;
-    background-color: rgba(0, 0, 0, 0.6);
-    background-position: 0 -330px;
+    height: 700px;
   }
   @include mq(desktop-big) {
-    background-position: 0 -400px;
+    height: 800px;
+  }
+
+  .backgroundImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    z-index: 0;
+    object-fit: cover;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    filter: brightness(0.5) blur(2px);
+    @include mq(tablet-big) {
+      width: 90vw;
+    }
+    @include mq(desktop) {
+      width: 85vw;
+    }
+    // @include mq(desktop-big) {
+    //   width: 77vw;
+    // }
   }
 
   .contentWrapper {
+    position: absolute;
     max-width: 380px;
+    width: max-content;
     margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     @include mq(tablet) {
       max-width: 440px;
     }
@@ -41,6 +66,7 @@
     .summary {
       font-size: 11px;
       margin-bottom: 60px;
+      // z-index: 2;
       @include mq(tablet) {
         font-size: 13px;
         margin-bottom: 80px;
