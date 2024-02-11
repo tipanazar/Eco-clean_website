@@ -1,5 +1,5 @@
 @mixin mq($range) {
-  $mobile: 470px;
+  $mobile: 375px;
   $tablet: 700px;
   $tablet_big: 890px;
   $desktop: 1100px;
@@ -22,7 +22,7 @@
     @media (min-width: $tablet) {
       @content;
     }
-  } @else if $range == tablet_big {
+  } @else if $range == tablet-big {
     @media (min-width: $tablet_big) {
       @content;
     }
@@ -30,11 +30,11 @@
     @media (min-width: $desktop) {
       @content;
     }
-  } @else if $range == desktop_big {
+  } @else if $range == desktop-big {
     @media (min-width: $desktop_big) {
       @content;
     }
-  } @else if $range == desktop_huge {
+  } @else if $range == desktop-huge {
     @media (min-width: $desktop_huge) {
       @content;
     }

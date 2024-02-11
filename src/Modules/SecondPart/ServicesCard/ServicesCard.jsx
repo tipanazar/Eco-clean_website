@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Icon } from "../Icon";
-import { Img } from "../Img";
-import { Modal } from "../Modal/Modal";
+import { Icon } from "../../../shared/Components/Icon";
+import { Img } from "../../../shared/Components/Img";
+import { Modal } from "../../../shared/Components/Modal/Modal";
 
 import s from "./servicesCard.module.scss";
 

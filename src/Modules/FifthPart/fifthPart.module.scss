@@ -1,29 +1,35 @@
 @import "../../sass/main.scss";
 
-.sectionWrapper {
-  padding-bottom: 0;
-  @include mq(tablet) {
-    & > p {
-      margin-bottom: 0 !important;
+.wrapper {
+  & > p {
+    @include mq(tablet) {
+      margin-bottom: 0;
     }
   }
-
   .contentWrapper {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 var(--sidePaddingMobile);
+
     @include mq(tablet) {
       display: flex;
-      align-items: flex-end;
-      width: fit-content;
-      margin: 0 auto;
+      padding: 0 var(--sidePaddingTablet);
+    }
+    @include mq(tablet-big) {
+      padding: 0 var(--sidePaddingTabletBig);
     }
 
     .address {
       display: flex;
       flex-direction: column;
       font-size: 18px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      @include mq(tablet) {
+        margin: auto 30px 15px 0;
+      }
 
       .link {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
       }
 
       .linksWrapper {
@@ -48,13 +54,18 @@
         height: 22px;
       }
     }
+  }
+  .bottomImg {
+    width: 100%;
+    max-width: 360px;
+    // height: 230px;
 
-    .bigIcon {
-      height: 230px;
-
-      @include mq(tablet) {
-        height: 180px;
-      }
+    @include mq(tablet) {
+      // height: 200px;
+    }
+    @include mq(tablet-big) {
+      // height: 280px;
+      // width: 500px;
     }
   }
 }

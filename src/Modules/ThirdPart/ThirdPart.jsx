@@ -1,4 +1,4 @@
-import { ExamplesCard } from "../../shared/Components/ExamplesCard/ExamplesCard";
+import { ExamplesCard } from "./ExamplesCard/ExamplesCard";
 import { SiteSection } from "../../shared/Components/SiteSection/SiteSection";
 
 import {

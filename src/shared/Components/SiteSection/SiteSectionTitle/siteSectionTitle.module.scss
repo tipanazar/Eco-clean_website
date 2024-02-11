@@ -1,0 +1,30 @@
+@import "../../../../sass/main.scss";
+
+.text {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-size: 22px;
+  margin: 25px var(--sidePaddingMobile) 25px var(--sidePaddingMobile);
+  @include mq(tablet) {
+    margin: 30px var(--sidePaddingTablet) 25px var(--sidePaddingTablet);
+  }
+  @include mq(tablet-big) {
+    margin: 30px var(--sidePaddingTabletBig) 25px var(--sidePaddingTabletBig);
+  }
+  @include mq(desktop) {
+    font-size: 25px;
+  }
+
+  &::before {
+    content: "";
+    width: 50px;
+    height: 2px;
+    margin-right: 15px;
+    top: 50%;
+    background-color: var(--highlightColor);
+    @include mq(desktop) {
+      width: 60px;
+    }
+  }
+}

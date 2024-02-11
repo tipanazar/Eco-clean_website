@@ -1,5 +1,5 @@
 import { SiteSection } from "../../shared/Components/SiteSection/SiteSection";
-import { ServicesCard } from "../../shared/Components/ServicesCard/ServicesCard";
+import { ServicesCard } from "./ServicesCard/ServicesCard";
 
 import { services5 } from "../../images";
 

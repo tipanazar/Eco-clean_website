@@ -6,19 +6,21 @@ $borderRadius: 7px;
   position: static;
   border-radius: $borderRadius;
   max-width: 330px;
-  //   margin-bottom: 25px;
+  // max-width: 310px;
+  // @include mq(mobile) {
+  //   max-width: 330px;
+  // }
   @include mq(tablet) {
     max-width: 500px;
+  }
+  @include mq(desktop) {
+    max-width: 800px;
   }
 
   & > div + div {
     position: absolute;
     bottom: 0px !important;
   }
-  //   & > div > div {
-  //     height: initial;
-  //     box-sizing: border-box;
-  //   }
 
   .galleryImage {
     width: 100%;
@@ -27,6 +29,9 @@ $borderRadius: 7px;
     object-fit: cover;
     @include mq(tablet) {
       max-height: 280px;
+    }
+    @include mq(desktop) {
+      max-height: 300px;
     }
   }
 }

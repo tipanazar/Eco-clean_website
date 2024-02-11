@@ -2,27 +2,14 @@
 
 .wrapper {
   position: relative;
-  padding: 25px 20px;
+  padding: 25px var(--sidePaddingMobile);
   @include mq(tablet) {
-    padding: 30px 40px;
+    padding: 30px var(--sidePaddingTablet);
   }
-
-  .text {
-    display: flex;
-    align-items: center;
-    font-size: 22px;
-    margin-bottom: 30px;
-    @include mq(tablet) {
-      margin-bottom: 25px;
-    }
-
-    &::before {
-      content: "";
-      width: 50px;
-      height: 2px;
-      margin-right: 15px;
-      top: 50%;
-      background-color: var(--highlightColor);
-    }
+  @include mq(tablet-big) {
+    padding: 30px var(--sidePaddingTabletBig);
+  }
+  & > p {
+    margin: 0 0 25px 0;
   }
 }

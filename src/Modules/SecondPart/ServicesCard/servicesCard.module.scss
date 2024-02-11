@@ -1,3 +1,5 @@
+@import "../../../sass/main.scss";
+
 $mediaHeight: 90px;
 
 .listItem {
@@ -11,19 +13,34 @@ $mediaHeight: 90px;
   width: fit-content;
   padding: 20px 15px;
   max-width: 200px;
+  @include mq(phone) {
+    font-size: 15px;
+  }
 
   .title {
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 15px;
+    @include mq(mobile) {
+      font-size: 18px;
+    }
   }
 
   .icon {
-    height: $mediaHeight;
+    height: calc($mediaHeight - 30px);
+    // height: $mediaHeight;
+
+    @include mq(mobile) {
+      height: $mediaHeight;
+    }
   }
 
   .img {
     margin: 0 auto;
-    height: $mediaHeight;
+    height: calc($mediaHeight - 30px);
+    // height: $mediaHeight;
+    @include mq(mobile) {
+      height: $mediaHeight;
+    }
   }
 
   .price {

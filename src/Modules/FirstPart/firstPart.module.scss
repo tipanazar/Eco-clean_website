@@ -9,12 +9,20 @@
   background-size: cover;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.5);
-  background-position: 0 -150px;
   background-image: url("../../images/others/firstBackground.jpg");
   @include mq(tablet) {
     display: flex;
     align-items: center;
-    min-height: 640px;
+    background-position: 0 -150px;
+    height: 640px;
+  }
+  @include mq(tablet-big) {
+    height: 680px;
+    background-position: 0 -220px;
+  }
+  @include mq(desktop) {
+    height: 680px;
+    background-position: 0 -330px;
   }
 
   .contentWrapper {

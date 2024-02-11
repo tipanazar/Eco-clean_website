@@ -8,7 +8,8 @@
   .img {
     max-width: 170px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
+    height: 100%;
     border: 1px solid #d9d9d9;
     @include mq(tablet) {
       max-width: 190px;

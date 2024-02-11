@@ -1,13 +1,16 @@
 import { Icon } from "../../shared/Components/Icon";
 
-import { SiteSection } from "../../shared/Components/SiteSection/SiteSection";
+import { SiteSectionTitle } from "../../shared/Components/SiteSection/SiteSectionTitle/SiteSectionTitle";
 
+import bottomImg from "../../images/others/bottomImg.png";
 import s from "./fifthPart.module.scss";
+import { Img } from "../../shared/Components/Img";
 
 export const FifthPart = () => {
   return (
     <>
-      <SiteSection className={s.sectionWrapper} title="Kontakt" id="contacts">
+      <section className={s.wrapper}>
+        <SiteSectionTitle title="Kontakt" />
         <div className={s.contentWrapper}>
           <address className={s.address}>
             <a className={s.link} href="tel:+48538944673">
@@ -35,9 +38,9 @@ export const FifthPart = () => {
               </a>
             </p>
           </address>
-          <Icon className={s.bigIcon} iconId="footerBigIcon" />
+          <Img className={s.bottomImg} src={bottomImg} />
         </div>
-      </SiteSection>
+      </section>
     </>
   );
 };
