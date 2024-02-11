@@ -1,7 +1,7 @@
 @import "../../sass/main.scss";
 
 %summary {
-  font-size: 11px;
+  font-size: 12px;
   margin-bottom: 60px;
   @include mq(tablet) {
     font-size: 13px;
@@ -160,7 +160,7 @@
       text-align: left;
       .listItem {
         color: #fff;
-        font-size: 10px;
+        font-size: 11px;
         line-height: 130%;
         letter-spacing: 1px;
 
