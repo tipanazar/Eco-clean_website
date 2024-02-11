@@ -1,5 +1,49 @@
 @import "../../sass/main.scss";
 
+%summary {
+  font-size: 11px;
+  margin-bottom: 60px;
+  @include mq(tablet) {
+    font-size: 13px;
+    margin-bottom: 80px;
+  }
+  @include mq(desktop) {
+    transform: translate(0%, 0%);
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  @include mq(desktop-big) {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    margin-top: 30px;
+    width: 60px;
+    height: 1px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(255, 255, 255, 0.774);
+    @include mq(tablet) {
+      width: 90px;
+      height: 2px;
+      margin-top: 40px;
+    }
+    @include mq(desktop) {
+      width: 110px;
+      height: 3px;
+      border-radius: 20px;
+    }
+    @include mq(desktop-big) {
+      width: 140px;
+      margin-top: 60px;
+    }
+  }
+}
+
 .wrapper {
   position: relative;
   padding-top: 60px;
@@ -7,14 +51,8 @@
   min-height: 480px;
   text-align: center;
   color: white;
-  // background-color: black;
-  // background-size: cover;
-  // background-blend-mode: multiply;
-  // background-image: url("");
 
   @include mq(tablet) {
-    display: flex;
-    align-items: center;
     height: 600px;
   }
   @include mq(tablet-big) {
@@ -33,12 +71,12 @@
     height: 100%;
     top: 0;
     left: 50%;
-    z-index: 0;
     object-fit: cover;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 1);
     border-radius: 5px;
     filter: brightness(0.5) blur(2px);
+
     @include mq(tablet-big) {
       width: 90vw;
     }
@@ -46,47 +84,38 @@
       width: 85vw;
     }
     // @include mq(desktop-big) {
-    //   width: 77vw;
+    //   width: 90vw;
     // }
+  }
+
+  .summaryDesktop {
+    @extend %summary;
+    display: none;
+    @include mq(desktop) {
+      display: block;
+    }
   }
 
   .contentWrapper {
     position: absolute;
-    max-width: 380px;
-    width: max-content;
-    margin: 0 auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @include mq(tablet) {
-      max-width: 440px;
+    @include mq(desktop) {
+      top: 63%;
+      left: 37%;
+      text-align: left;
+    }
+    @include mq(desktop-big) {
+      top: 65%;
+      left: 35%;
     }
 
-    .summary {
-      font-size: 11px;
-      margin-bottom: 60px;
-      // z-index: 2;
-      @include mq(tablet) {
-        font-size: 13px;
-        margin-bottom: 80px;
-      }
-
-      &::after {
-        position: absolute;
-        content: "";
-        display: block;
-        margin: 30px auto;
-        width: 60px;
-        height: 1px;
-        left: 50%;
-        transform: translate(-50%);
-        background-color: rgba(255, 255, 255, 0.774);
-        @include mq(tablet) {
-          width: 90px;
-          height: 2px;
-          margin: 40px auto;
-        }
+    .summaryMobile {
+      @extend %summary;
+      @include mq(desktop) {
+        display: none;
       }
     }
 
@@ -98,6 +127,10 @@
       letter-spacing: 1px;
       @include mq(tablet) {
         font-size: 19px;
+      }
+      @include mq(desktop) {
+        margin-bottom: 40px;
+        font-size: 20px;
       }
     }
 
@@ -119,6 +152,11 @@
         font-size: 18px;
         padding: 10px 25px;
       }
+      @include mq(desktop) {
+        font-size: 22px;
+        padding: 10px 33px;
+        margin: 0 0 40px 0;
+      }
     }
 
     .list {
@@ -126,11 +164,17 @@
       .listItem {
         color: #fff;
         font-size: 10px;
-        font-weight: 400;
         line-height: 130%;
         letter-spacing: 1px;
+
         @include mq(tablet) {
           font-size: 12px;
+        }
+        @include mq(desktop) {
+          font-size: 14px;
+        }
+        @include mq(desktop-big) {
+          font-size: 15px;
         }
       }
     }

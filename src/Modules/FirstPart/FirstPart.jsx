@@ -7,17 +7,22 @@ import s from "./firstPart.module.scss";
 export const FirstPart = () => {
   return (
     <section className={s.wrapper}>
-        <Img
-          className={s.backgroundImage}
-          src={backgroundImage}
-          alt="background image"
-        />
+      <Img
+        className={s.backgroundImage}
+        src={backgroundImage}
+        alt="background image"
+      />
+        <p className={s.summaryDesktop}>
+          WYBIERZ USLUGE DOSTOSOWANA DO TWOICH POTRZEB
+        </p>
       <div className={s.contentWrapper}>
-        <p className={s.summary}>
+        <p className={s.summaryMobile}>
           WYBIERZ USLUGE DOSTOSOWANA DO TWOICH POTRZEB
         </p>
         <h1 className={s.title}>
-          PROFESJONALNE SPRZATANIE TA PRANIE TAPICERKI MEBLOWEJ BYDGOSZCZ
+          PROFESJONALNE SPRZATANIE TA PRANIE
+          <br />
+          TAPICERKI MEBLOWEJ BYDGOSZCZ
         </h1>
         <a className={s.link} href="#services">
           Nasze usługi
