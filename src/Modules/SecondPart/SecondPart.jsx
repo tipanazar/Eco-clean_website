@@ -127,10 +127,8 @@ export const SecondPart = () => {
             <li>Bidetu i WC.</li>
             <li>Zmiana worka na śmieci.</li>
           </ul>
-          10-12 zł/m²
-          <br />
-          <br />
-          *cena zależy od stopnia zabrudzenia.
+          <p>10-12 zł/m²</p>
+          <p>* Cena zależy od stopnia zabrudzenia.</p>
         </ServicesCard>
         <ServicesCard
           title="Sprzątanie generalne"
@@ -138,41 +136,42 @@ export const SecondPart = () => {
           price={420}
           iconId="services-3"
         >
-          <p>
-            Сo obejmuje sprzątanie generalne?
-            <br />
-            <br />
-            We wszystkich pokojach:
-            <br />
-            Mycie wszystkich powierzchni, frontów meblowych, blatów, drzwi i
-            parapetów mycie grzejników mycie powierzchni szklanych, żyrandoli i
-            lamp dezynfekcja wyłączników, klamek i gniazdek zmiana pościeli w
-            sypialni odkurzenie dywanów mycie i odkurzanie podłogi wynoszenie
-            śmieci.
-            <br />
-            <br />
-            W kuchni:
-            <br />
-            Mycie wszystkich szafek od wewnątrz i na zewnątrz czyszczenie
-            kuchenki, złewozmywaka. czyszczenie sprzętu AGD od wewnątrz i na
-            zewnątrz mycie stołu i krzeseł zmiana worka na śmieci.
-            <br />
-            <br />
-            W łazience i toalecie:
-            <br />
-            Mycie kabiny prysznicowej / wanny mycie płytki (ściany kabiny /
-            wanny) składanie rzeczy i kosmetyków mycie umywalki, brodziku
-            prysznicowego, bidetu i WC zmiana worka na śmieci
-            <br />
-            <br />
-            Mycie wszystkich okien
-            <br />
-            <br />
-            15-17zł/m²
-            <br />
-            <br />
-            *cena zależy od stopnia zabrudzenia.
-          </p>
+          <p>Сo obejmuje sprzątanie generalne?</p>
+          <ul aria-label="We wszystkich pokojach:">
+            <li>Mycie wszystkich powierzchni.</li>
+            <li>Frontów meblowych.</li>
+            <li>Blatów.</li>
+            <li>Drzwi i parapetów.</li>
+            <li>Mycie grzejników.</li>
+            <li>Mycie powierzchni szklanych.</li>
+            <li>Żyrandoli i lamp.</li>
+            <li>Dezynfekcja wyłączników, klamek i gniazdek.</li>
+            <li>Zmiana pościeli w sypialni.</li>
+            <li>Odkurzenie dywanów.</li>
+            <li>Mycie i odkurzanie podłogi.</li>
+            <li>Wynoszenie śmieci.</li>
+          </ul>
+          <ul aria-label="W kuchni:">
+            <li>Mycie wszystkich szafek od wewnątrz i na zewnątrz.</li>
+            <li>Czyszczenie kuchenki.</li>
+            <li>
+              Złewozmywaka czyszczenie sprzętu AGD od wewnątrz i na zewnątrz.
+            </li>
+            <li>Mycie stołu i krzeseł.</li>
+            <li>Zmiana worka na śmieci.</li>
+          </ul>
+          <ul aria-label="W łazience i toalecie:">
+            <li>Mycie kabiny prysznicowej / wanny.</li>
+            <li>Mycie płytki (ściany kabiny / wanny).</li>
+            <li>Składanie rzeczy i kosmetyków.</li>
+            <li>Mycie umywalki.</li>
+            <li>Brodziku prysznicowego.</li>
+            <li>Bidetu i WC.</li>
+            <li>Zmiana worka na śmieci.</li>
+          </ul>
+          <p>+ Mycie wszystkich okien.</p>
+          <p>15-17 zł/m²</p>
+          <p>* Cena zależy od stopnia zabrudzenia.</p>
         </ServicesCard>
         <ServicesCard
           title="Sprzątanie po budowie"
@@ -183,19 +182,19 @@ export const SecondPart = () => {
         >
           <p>Сo obejmuje sprzątanie po budowie?</p>
           <ul>
-            <li>mycie wszystkich okien</li>
-            <li>usuwanie kurzu ze ścian i sufitów</li>
-            <li>mycie wszystkich powierzchni i frontów meblowych</li>
-            <li>usuwanie lokalnych zanieczyszczeń budowlanych</li>
-            <li>mycie drzwi i parapetów</li>
-            <li>mycie listew przypodłogowych i grzejników</li>
-            <li>mycie powierzchni szklanych, luster i lamp</li>
-            <li>mycie kuchenki, złewozmywaka</li>
-            <li>mycie mikrofalówki, piekarnika, kratki wentylacyjnej</li>
-            <li>mycie wanny, kabiny prysznicowej</li>
-            <li>mycie umywalki, WC i bidetu</li>
-            <li>odkurzanie dywanów i tapicerki</li>
-            <li>mycie i odkurzanie podłóg</li>
+            <li>Mycie wszystkich okien.</li>
+            <li>Usuwanie kurzu ze ścian i sufitów.</li>
+            <li>Mycie wszystkich powierzchni i frontów meblowych.</li>
+            <li>Usuwanie lokalnych zanieczyszczeń budowlanych.</li>
+            <li>Mycie drzwi i parapetów.</li>
+            <li>Mycie listew przypodłogowych i grzejników.</li>
+            <li>Mycie powierzchni szklanych, luster i lamp.</li>
+            <li>Mycie kuchenki, złewozmywaka.</li>
+            <li>Mycie mikrofalówki, piekarnika, kratki wentylacyjnej.</li>
+            <li>Mycie wanny, kabiny prysznicowej.</li>
+            <li>Mycie umywalki, WC i bidetu.</li>
+            <li>Odkurzanie dywanów i tapicerki.</li>
+            <li>Mycie i odkurzanie podłóg.</li>
           </ul>
           <p>17 zł /m².</p>
         </ServicesCard>
