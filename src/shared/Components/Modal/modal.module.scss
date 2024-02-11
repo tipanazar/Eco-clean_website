@@ -8,6 +8,7 @@
   margin-top: 250px;
   background-color: white;
   width: 100vw;
+  min-height: 500px;
   border-radius: 20px 20px 0 0;
   padding: 20px 30px 0px 30px;
 
@@ -16,6 +17,7 @@
     padding: 30px 50px 0px 50px;
     border-radius: 25px 25px 0 0;
   }
+
   @include mq(desktop) {
     max-height: 90vh;
     max-width: 900px;
@@ -85,6 +87,12 @@
   ul {
     list-style: disc;
     padding-left: 20px;
+
+    &:before {
+      content: attr(aria-label);
+      margin-left: -20px;
+    }
+
     li {
       margin-bottom: 3px;
       &:last-of-type {

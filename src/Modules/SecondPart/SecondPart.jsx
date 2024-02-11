@@ -95,31 +95,42 @@ export const SecondPart = () => {
           price={290}
           iconId="services-2"
         >
-          <p>
-            Сo obejmuje sprzątanie generalne? We wszystkich pokojach mycie
-            wszystkich powierzchni, frontów meblowych, blatów, drzwi i parapetów
-            mycie grzejników mycie powierzchni szklanych, żyrandoli i lamp
-            dezynfekcja wyłączników, klamek i gniazdek odkurzenie dywanów mycie
-            i odkurzanie podłogi, wynoszenie śmieci.
-            <br /> <br />
-            W kuchni:
-            <br />
-            Mycie wszystkich szafek na zewnątrz czyszczenie kuchenki,
-            zlewozmywaka czyszczenie sprzętu AGD z zewnątrz mycie stołu i
-            krzeseł zmiana worka na śmieci.
-            <br /> <br />
-            W łazience i toalecie:
-            <br />
-            Mycie kabiny prysznicowej / wanny mycie płytki (ściany kabiny /
-            wanny) składanie rzeczy i kosmetyków mycie umywalki, brodziku
-            prysznicowego, bidetu i WC zmiana worka na śmieci.
-            <br />
-            <br />
-            10-12 zl/m²
-            <br />
-            <br />
-            *cena zależy od stopnia zabrudzenia.
-          </p>
+          <p>Сo obejmuje sprzątanie generalne?</p>
+          <ul aria-label="We wszystkich pokojach:">
+            <li>Mycie wszystkich powierzchni.</li>
+            <li>Frontów meblowych.</li>
+            <li>Blatów.</li>
+            <li>Drzwi i parapetów.</li>
+            <li>Mycie grzejników.</li>
+            <li>Mycie powierzchni szklanych.</li>
+            <li>Żyrandoli i lamp.</li>
+            <li>Dezynfekcja wyłączników.</li>
+            <li>Klamek i gniazdek.</li>
+            <li>Odkurzenie dywanów.</li>
+            <li>Mycie i odkurzanie podłogi.</li>
+            <li>Wynoszenie śmieci.</li>
+          </ul>
+          <ul aria-label="W kuchni:">
+            <li>Mycie wszystkich szafek na zewnątrz.</li>
+            <li>Czyszczenie kuchenki.</li>
+            <li>Złewozmywaka czyszczenie.</li>
+            <li>Sprzętu AGD z zewnątrz.</li>
+            <li>Mycie stołu i krzeseł.</li>
+            <li>Zmiana worka na śmieci.</li>
+          </ul>
+          <ul aria-label="W łazience i toalecie:">
+            <li>Mycie kabiny prysznicowej / wanny.</li>
+            <li>Mycie płytki (ściany kabiny / wanny).</li>
+            <li>Składanie rzeczy i kosmetyków.</li>
+            <li>Mycie umywalki.</li>
+            <li>Brodziku prysznicowego.</li>
+            <li>Bidetu i WC.</li>
+            <li>Zmiana worka na śmieci.</li>
+          </ul>
+          10-12 zł/m²
+          <br />
+          <br />
+          *cena zależy od stopnia zabrudzenia.
         </ServicesCard>
         <ServicesCard
           title="Sprzątanie generalne"
@@ -143,7 +154,7 @@ export const SecondPart = () => {
             W kuchni:
             <br />
             Mycie wszystkich szafek od wewnątrz i na zewnątrz czyszczenie
-            kuchenki, zlewozmywaka. czyszczenie sprzętu AGD od wewnątrz i na
+            kuchenki, złewozmywaka. czyszczenie sprzętu AGD od wewnątrz i na
             zewnątrz mycie stołu i krzeseł zmiana worka na śmieci.
             <br />
             <br />
@@ -157,7 +168,7 @@ export const SecondPart = () => {
             Mycie wszystkich okien
             <br />
             <br />
-            15-17zl/m²
+            15-17zł/m²
             <br />
             <br />
             *cena zależy od stopnia zabrudzenia.
@@ -179,19 +190,21 @@ export const SecondPart = () => {
             <li>mycie drzwi i parapetów</li>
             <li>mycie listew przypodłogowych i grzejników</li>
             <li>mycie powierzchni szklanych, luster i lamp</li>
-            <li>mycie kuchenki, zlewozmywaka</li>
+            <li>mycie kuchenki, złewozmywaka</li>
             <li>mycie mikrofalówki, piekarnika, kratki wentylacyjnej</li>
             <li>mycie wanny, kabiny prysznicowej</li>
             <li>mycie umywalki, WC i bidetu</li>
             <li>odkurzanie dywanów i tapicerki</li>
             <li>mycie i odkurzanie podłóg</li>
           </ul>
-          <p>17 zl /m².</p>
+          <p>17 zł /m².</p>
         </ServicesCard>
         <ServicesCard
           title={
             <span>
-              Сzyszczenie <br /> okien
+              Сzyszczenie
+              <br />
+              okien
             </span>
           }
           modalTitle="Сzyszczenie okien"
@@ -200,81 +213,27 @@ export const SecondPart = () => {
           m2={true}
           isPng={true}
         >
-          <p>
-            Usunięcie niektórych plam oraz przywrócenie tapicerowanych mebli do
-            ich poprzedniego wyglądu możliwe jest jedynie dzięki wysokiej
-            jakości czyszczeniu tapicerki.
-            <br />
-            <br />
-            Czy myjesz zęby dwa razy dziennie? Twoje meble, według naszych
-            ekspertów, również muszą być czyszczone przynajmniej dwa razy w
-            roku. Czyszczenie tapicerki to niezbędna higiena Twojej przestrzeni!
-            <br />
-            <br />
-            Używamy wysokiej jakości, dobrze przetestowanych produktów do
-            czyszczenia mebli przy użyciu profesjonalnej technologii.
-            <br />
-            <br />
-          </p>
           <table>
             <tbody>
               <tr>
-                <td>Krzesło</td>
-                <td>40-50 zł</td>
+                <td>Sezonowe mycie okien</td>
+                <td>15 zł/m²</td>
               </tr>
               <tr>
-                <td>Fotel</td>
-                <td>90 zł</td>
+                <td>Mycie okien po remoncie</td>
+                <td>20-25 zł/m²</td>
               </tr>
               <tr>
-                <td>Pufa</td>
-                <td>50 zł</td>
+                <td>Mycie rolet zewnętrznych antywłamaniowych</td>
+                <td>do uzgodnienia</td>
               </tr>
               <tr>
-                <td>Materac jednoosobowy</td>
-                <td>110 zł</td>
-              </tr>
-              <tr>
-                <td>Materac jednoosobowy dwustronnie</td>
-                <td>190 zł</td>
-              </tr>
-              <tr>
-                <td>Materac dwuosobowy</td>
-                <td>140 zł</td>
-              </tr>
-              <tr>
-                <td>Materac dwuosobowy dwustronnie</td>
-                <td>240 zł</td>
-              </tr>
-              <tr>
-                <td>Sofa dwuosobowa* (100-120 cm)</td>
-                <td>130 zł</td>
-              </tr>
-              <tr>
-                <td>Sofa trzyosobowa*</td>
-                <td>160 zł</td>
-              </tr>
-              <tr>
-                <td>Narożnik*</td>
-                <td>od 190 zł</td>
-              </tr>
-              <tr>
-                <td>Zagłówek do łóżka</td>
-                <td>85 zł</td>
-              </tr>
-              <tr>
-                <td>Dywan</td>
-                <td>25-28 zł/m²</td>
+                <td>Mycie reklam itp</td>
+                <td>do uzgodnienia</td>
               </tr>
             </tbody>
           </table>
-          <p>
-            * Poduszki 10-20 zł.
-            <br />
-            ** Funkcja spania 30 zł.
-            <br />
-            *** Minimalne zamówienie 150 zł.
-          </p>
+          <p>* Minimalny koszt usługi wynosi 200 zł</p>
         </ServicesCard>
       </ul>
     </SiteSection>
