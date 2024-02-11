@@ -21,7 +21,7 @@ export const Header = () => {
           href="https://www.instagram.com/pranie.kanap_bydgoszcz?igsh=NDYwcGppdjV3aXVy"
         >
           <Icon className={s.icon} iconId="instagram" />
-          Instagram
+          pranie.kanap_bydgoszcz
         </a>
       </address>
     </header>
