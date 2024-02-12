@@ -57,6 +57,7 @@
     height: 650px;
   }
   @include mq(desktop) {
+    padding-top: 60px;
     height: 700px;
   }
   @include mq(desktop-big) {
@@ -73,7 +74,7 @@
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 1);
     filter: brightness(0.5) blur(2px);
-    
+
     @include mq(tablet-big) {
       border-radius: 5px;
       width: 90vw;

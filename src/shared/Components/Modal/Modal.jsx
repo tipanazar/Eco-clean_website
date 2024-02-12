@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
 import { Icon } from "../Icon";
+
 import s from "./modal.module.scss";
 
 const modalRoot = document.querySelector("div#modalRoot");
@@ -34,37 +35,31 @@ export const Modal = ({ children, closeModal, title }) => {
         </button>
       </div>
       {children}
-      <button
-        className={s.orderButton}
-        onClick={() => isButton && setIsButton(false)}
-      >
-        {isButton ? (
-          "Zamów usługę"
-        ) : (
-          <a className={s.contactLink} href="tel:+48538944673">
-            +48538944673
-          </a>
-        )}
-      </button>
       <address className={s.address}>
         <a
-          className={isButton ? s.contactLinkDisabled : s.contactLink}
-          href="https://www.instagram.com/pranie.kanap_bydgoszcz?igsh=NDYwcGppdjV3aXVy"
+          className={`${s.contactLink} ${s.messengerLink}`}
+          href="https://www.facebook.com/messages/t/108891925231727"
         >
-          <Icon className={s.icon} iconId="instagram" />
+          <Icon className={s.icon} iconId="messenger" />
+          Napisz do nas teraz
         </a>
-        <a
-          className={isButton ? s.contactLinkDisabled : s.contactLink}
-          href="https://t.me/+380967935369"
-        >
-          <Icon className={s.icon} iconId="telegram" />
-        </a>
-        <a
-          className={isButton ? s.contactLinkDisabled : s.contactLink}
-          href="https://www.facebook.com/profile.php?id=100083723741440"
-        >
-          <Icon className={s.icon} iconId="facebook" />
-        </a>
+        <div className={s.contactsWrapper}>
+          <a
+            className={s.contactLink}
+            href="https://www.instagram.com/pranie.kanap_bydgoszcz?igsh=NDYwcGppdjV3aXVy"
+          >
+            <Icon className={s.icon} iconId="instagram" />
+          </a>
+          <a className={s.contactLink} href="https://t.me/+380967935369">
+            <Icon className={s.icon} iconId="telegram" />
+          </a>
+          <a
+            className={s.contactLink}
+            href="https://www.facebook.com/profile.php?id=100083723741440"
+          >
+            <Icon className={s.icon} iconId="facebook" />
+          </a>
+        </div>
       </address>
     </div>,
     modalRoot
