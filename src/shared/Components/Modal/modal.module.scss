@@ -110,10 +110,7 @@
 
     .contactsWrapper {
       display: flex;
-      gap: 10px;
-      @include mq(tablet) {
-        gap: 15px;
-      }
+      gap: 7px;
     }
 
     .contactLink {
@@ -121,41 +118,50 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      padding: 5px;
-      border-radius: 10px;
+      padding: 7px 0;
+      border-radius: 5px;
       background: #0099c2;
       font-size: 16px;
       letter-spacing: 1px;
       font-style: normal;
       color: white !important;
+      transition: all 100ms !important;
+
       @include mq(tablet) {
         font-size: 18px;
-      }
-      @include mq(desktop) {
-        font-size: 18px;
-        padding: 10px 0;
-        border-radius: 50px;
       }
 
       &:hover {
         background: #ff8f6c;
       }
 
+      &:first-of-type {
+        border-radius: 50px 10px 10px 50px;
+      }
+
+      &:last-of-type {
+        border-radius: 10px 50px 50px 10px;
+      }
+
       .icon {
         fill: #fff !important;
         width: 28px;
         height: 28px;
-        // transition: all 0s !important;
+
+        @include mq(desktop) {
+          width: 30px;
+          height: 30px;
+        }
       }
     }
 
     .messengerLink {
       margin-bottom: 10px;
       background-color: #ff8f6c;
-      padding: 7px 17px;
-      border-radius: 50px;
-      @include mq(tablet) {
-        margin-bottom: 15px;
+      padding: 10px 20px;
+      border-radius: 50px !important;
+      @include mq(desktop) {
+        margin-bottom: 10px;
       }
 
       &:hover {
@@ -163,8 +169,8 @@
       }
 
       .icon {
-        width: 30px;
-        height: 30px;
+        width: 34px;
+        height: 34px;
         margin-right: 5px;
       }
     }

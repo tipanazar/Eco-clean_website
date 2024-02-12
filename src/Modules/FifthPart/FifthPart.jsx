@@ -2,9 +2,10 @@ import { Icon } from "../../shared/Components/Icon";
 
 import { SiteSectionTitle } from "../../shared/Components/SiteSection/SiteSectionTitle/SiteSectionTitle";
 
-import bottomImg from "../../images/others/bottomImg.png";
-import s from "./fifthPart.module.scss";
 import { Img } from "../../shared/Components/Img";
+import bottomImg from "../../images/others/bottomImg.png";
+
+import s from "./fifthPart.module.scss";
 
 export const FifthPart = () => {
   return (

@@ -12,9 +12,9 @@ export const FirstPart = () => {
         src={backgroundImage}
         alt="background image"
       />
-        <p className={s.summaryDesktop}>
-          WYBIERZ USLUGE DOSTOSOWANA DO TWOICH POTRZEB
-        </p>
+      <p className={s.summaryDesktop}>
+        WYBIERZ USLUGE DOSTOSOWANA DO TWOICH POTRZEB
+      </p>
       <div className={s.contentWrapper}>
         <p className={s.summaryMobile}>
           WYBIERZ USLUGE DOSTOSOWANA DO TWOICH POTRZEB

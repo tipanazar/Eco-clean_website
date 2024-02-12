@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { createPortal } from "react-dom";
 
 import { Icon } from "../Icon";
@@ -9,7 +9,6 @@ const modalRoot = document.querySelector("div#modalRoot");
 const body = document.querySelector("body");
 
 export const Modal = ({ children, closeModal, title }) => {
-  const [isButton, setIsButton] = useState(true);
   useEffect(() => {
     modalRoot.addEventListener("click", close);
   });

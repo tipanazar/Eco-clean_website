@@ -26,7 +26,7 @@
         <path stroke-linecap="round" stroke-width="2"
             d="m1.5 1 11.25 10.75M24 22.5 12.75 11.75m0 0L24 1M12.75 11.75 1.5 22.5" />
     </symbol>
-    <symbol id='messenger' viewBox="0 0 37 37">
+    <symbol id='messenger' viewBox="0 0 36 36">
         <path fill-rule="evenodd"
             d="M18.5 5C11.044 5 5 10.596 5 17.5c0 3.934 1.963 7.443 5.031 9.734V32l4.597-2.523c1.226.34 2.526.523 3.872.523C25.956 30 32 24.404 32 17.5S25.956 5 18.5 5Zm1.342 16.833-3.438-3.666-6.708 3.666L17.075 14l3.521 3.667L27.221 14l-7.38 7.833Z"
             clip-rule="evenodd" />
