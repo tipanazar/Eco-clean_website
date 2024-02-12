@@ -127,7 +127,7 @@ export const SecondPart = () => {
             <li>Bidetu i WC.</li>
             <li>Zmiana worka na śmieci.</li>
           </ul>
-          <p>10-12 zł/m².</p>
+          <p style={{ fontSize: 18, fontWeight: "bold" }}>10-12 zł/m².</p>
           <p>* Cena zależy od stopnia zabrudzenia.</p>
         </ServicesCard>
         <ServicesCard
@@ -170,7 +170,7 @@ export const SecondPart = () => {
             <li>Zmiana worka na śmieci.</li>
           </ul>
           <p>+ Mycie wszystkich okien.</p>
-          <p>15-17 zł/m².</p>
+          <p style={{ fontSize: 18, fontWeight: "bold" }}>15-17 zł/m².</p>
           <p>* Cena zależy od stopnia zabrudzenia.</p>
         </ServicesCard>
         <ServicesCard
@@ -196,7 +196,7 @@ export const SecondPart = () => {
             <li>Odkurzanie dywanów i tapicerki.</li>
             <li>Mycie i odkurzanie podłóg.</li>
           </ul>
-          <p>17 zł /m².</p>
+          <p style={{ fontSize: 18, fontWeight: "bold" }}>17 zł /m².</p>
         </ServicesCard>
         <ServicesCard
           title={
