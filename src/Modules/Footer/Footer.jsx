@@ -6,7 +6,9 @@ import s from "./footer.module.scss";
 export const Footer = () => {
   return (
     <footer className={s.wrapper}>
-      <Img className={s.img} src={headerLogo} />
+      <a href="/">
+        <Img className={s.img} src={headerLogo} />
+      </a>
       <nav className={s.navWrapper}>
         <a className={s.navlink} href="#services">
           Usługi

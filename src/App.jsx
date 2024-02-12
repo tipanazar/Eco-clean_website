@@ -11,13 +11,14 @@ function App() {
     <>
       <Header />
       <main>
-        <FirstPart />
+        <h1>Підключити фото для посилань перед деплоєм коли буде домен!</h1>
+        {/* <FirstPart />
         <SecondPart />
         <ThirdPart />
         <FourthPart />
-        <FifthPart />
-        <Footer />
+        <FifthPart /> */}
       </main>
+      <Footer />
     </>
   );
 }

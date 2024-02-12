@@ -8,7 +8,7 @@ import s from "./header.module.scss";
 export const Header = () => {
   return (
     <header className={s.header} id="header">
-      <a className={s.headerLogoLink} href="#header">
+      <a className={s.headerLogoLink} href="/">
         <Img className={s.headerLogo} src={headerLogo} alt="logo" />
       </a>
       <address className={s.address}>
