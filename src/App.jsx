@@ -11,12 +11,11 @@ function App() {
     <>
       <Header />
       <main>
-        <h1>Підключити фото для посилань перед деплоєм коли буде домен!</h1>
-        {/* <FirstPart />
+        <FirstPart />
         <SecondPart />
         <ThirdPart />
         <FourthPart />
-        <FifthPart /> */}
+        <FifthPart />
       </main>
       <Footer />
     </>

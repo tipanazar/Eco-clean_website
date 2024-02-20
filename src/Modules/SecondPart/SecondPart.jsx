@@ -139,6 +139,7 @@ export const SecondPart = () => {
           <p>Сo obejmuje sprzątanie generalne?</p>
           <ul aria-label="We wszystkich pokojach:">
             <li>Mycie wszystkich powierzchni.</li>
+            <li>Mycie ścian.</li>
             <li>Frontów meblowych.</li>
             <li>Blatów.</li>
             <li>Drzwi i parapetów.</li>
@@ -190,7 +191,8 @@ export const SecondPart = () => {
             <li>Mycie listew przypodłogowych i grzejników.</li>
             <li>Mycie powierzchni szklanych, luster i lamp.</li>
             <li>Mycie kuchenki, złewozmywaka.</li>
-            <li>Mycie mikrofalówki, piekarnika, kratki wentylacyjnej.</li>
+            <li>Mycie mikrofalówki, pie
+              karnika, kratki wentylacyjnej.</li>
             <li>Mycie wanny, kabiny prysznicowej.</li>
             <li>Mycie umywalki, WC i bidetu.</li>
             <li>Odkurzanie dywanów i tapicerki.</li>
@@ -216,11 +218,11 @@ export const SecondPart = () => {
             <tbody>
               <tr>
                 <td>Sezonowe mycie okien</td>
-                <td>15 zł/m²</td>
+                <td>22 zł/m²</td>
               </tr>
               <tr>
                 <td>Mycie okien po remoncie</td>
-                <td>20-25 zł/m²</td>
+                <td>25 zł/m²</td>
               </tr>
               <tr>
                 <td>Mycie rolet zewnętrznych antywłamaniowych</td>
