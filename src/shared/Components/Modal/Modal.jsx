@@ -37,7 +37,7 @@ export const Modal = ({ children, closeModal, title }) => {
       <address className={s.address}>
         <a
           className={`${s.contactLink} ${s.messengerLink}`}
-          href="https://www.facebook.com/messages/t/108891925231727"
+          href="https://www.facebook.com/profile.php?id=100083723741440"
         >
           <Icon className={s.icon} iconId="messenger" />
           Napisz do nas teraz
@@ -45,7 +45,7 @@ export const Modal = ({ children, closeModal, title }) => {
         <div className={s.contactsWrapper}>
           <a
             className={s.contactLink}
-            href="https://www.instagram.com/pranie.kanap_bydgoszcz?igsh=NDYwcGppdjV3aXVy"
+            href="https://www.instagram.com/eco.cleaning.bydgoszcz?igsh=NDYwcGppdjV3aXVy"
           >
             <Icon className={s.icon} iconId="instagram" />
           </a>
