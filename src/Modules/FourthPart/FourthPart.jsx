@@ -8,6 +8,7 @@ import { SiteSection } from "../../shared/Components/SiteSection/SiteSection";
 import { Img } from "../../shared/Components/Img";
 
 import {
+  firstBackground,
   gallery1,
   gallery2,
   gallery3,
@@ -43,6 +44,9 @@ export const FourthPart = () => {
         }}
         modules={[Autoplay, Pagination]}
       >
+        <SwiperSlide>
+          <Img className={s.galleryImage} src={firstBackground} alt="Przykład pracy" />
+        </SwiperSlide>
         <SwiperSlide>
           <Img className={s.galleryImage} src={gallery1} alt="Przykład pracy" />
         </SwiperSlide>
