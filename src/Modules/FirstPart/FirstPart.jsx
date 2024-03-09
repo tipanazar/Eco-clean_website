@@ -1,6 +1,6 @@
 import { Img } from "../../shared/Components/Img";
 
-import backgroundImage from "../../images/others/firstBackground.jpg";
+import { firstBackground } from "../../images";
 
 import s from "./firstPart.module.scss";
 
@@ -9,7 +9,7 @@ export const FirstPart = () => {
     <section className={s.wrapper}>
       <Img
         className={s.backgroundImage}
-        src={backgroundImage}
+        src={firstBackground}
         alt="background image"
       />
       <p className={s.summaryDesktop}>
@@ -20,9 +20,11 @@ export const FirstPart = () => {
           WYBIERZ USLUGE DOSTOSOWANA DO TWOICH POTRZEB
         </p>
         <h1 className={s.title}>
-          PROFESJONALNE SPRZATANIE TA PRANIE
+          PROFESJONALNE
           <br />
-          TAPICERKI MEBLOWEJ BYDGOSZCZ
+          PRANIE TAPICERKI MEBLOWEJ
+          <br />
+          MYCIE OKIEN BYDGOSZCZ
         </h1>
         <a className={s.link} href="#services">
           Nasze usługi

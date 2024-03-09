@@ -10,7 +10,6 @@ export const ServicesCard = ({
   price,
   iconId,
   modalTitle,
-  m2 = null,
   isPng = false,
   children,
 }) => {

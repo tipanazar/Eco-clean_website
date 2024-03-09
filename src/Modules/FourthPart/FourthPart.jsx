@@ -14,6 +14,8 @@ import {
   gallery4,
   gallery5,
   gallery6,
+  gallery7,
+  gallery8,
 } from "../../images";
 
 import s from "./fourthPart.module.scss";
@@ -58,6 +60,12 @@ export const FourthPart = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Img className={s.galleryImage} src={gallery6} alt="Przykład pracy" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Img className={s.galleryImage} src={gallery7} alt="Przykład pracy" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Img className={s.galleryImage} src={gallery8} alt="Przykład pracy" />
         </SwiperSlide>
       </Swiper>
     </SiteSection>
