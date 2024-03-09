@@ -45,7 +45,7 @@ export const Modal = ({ children, closeModal, title }) => {
         <div className={s.contactsWrapper}>
           <a
             className={s.contactLink}
-            href="https://www.instagram.com/eco.cleaning.bydgoszcz?igsh=NDYwcGppdjV3aXVy"
+            href="https://www.instagram.com/pranie.kanap_bydgoszcz?igsh=NDYwcGppdjV3aXVy"
           >
             <Icon className={s.icon} iconId="instagram" />
           </a>
