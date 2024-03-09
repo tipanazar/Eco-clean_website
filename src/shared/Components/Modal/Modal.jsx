@@ -13,7 +13,7 @@ export const Modal = ({ children, closeModal, title }) => {
     modalRoot.addEventListener("click", close);
   });
 
-  modalRoot.style.zIndex = 2;
+  modalRoot.style.zIndex = 10;
   body.style.overflow = "hidden";
 
   const close = (ev) => {
