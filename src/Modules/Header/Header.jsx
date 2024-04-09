@@ -12,9 +12,9 @@ export const Header = () => {
         <Img className={s.headerLogo} src={headerLogo} alt="logo" />
       </a>
       <address className={s.address}>
-        <a className={s.addressLink} href="https://t.me/+380967935369">
-          <Icon className={s.icon} iconId="telegram" />
-          Napisz do nas teraz
+        <a className={s.addressLink} href="tel:+48538944673">
+          <Icon className={s.icon} iconId="phone" />
+          +48538944673
         </a>
         <a
           className={s.addressLink}
